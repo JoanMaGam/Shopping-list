@@ -1,14 +1,8 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import { FaEdit } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 
 const List = ({ productList, EditClick, DeleteClick }) => {
-
-    const editBtnRef = useRef(null);
-    const deleteBtnRef = useRef(null);
-
-
-
 
     return (
         <div>
@@ -20,11 +14,9 @@ const List = ({ productList, EditClick, DeleteClick }) => {
                             <div className='btn-pad'>
                                 <button
                                     className='btn-edit'
-                                    ref={editBtnRef}
                                     onClick={() => EditClick(product.id)}><FaEdit /></button>
                                 <button
                                     className='btn-delete'
-                                    ref={deleteBtnRef}
                                     onClick={() => DeleteClick(product.id)}><MdDelete /></button>
                             </div>
                         </section>

@@ -1,13 +1,15 @@
 import React from 'react'
+import { useEffect } from 'react';
 
-export const Alert = ({ setAlert }) => {
+export const Alert = ({ alert, productList, showAlert }) => {
 
-    setTimeout(() => {
-        setAlert(false)
-    }, 3000);
-
+    useEffect(() => {
+        setTimeout(() => {
+            showAlert();
+        }, 3000);
+    }, [productList]);
 
     return (
-        <div>Please enter a value</div>
+        <p className='alert' style={{ backgroundColor: alert.type }}>{alert.message}</p>
     )
 }
