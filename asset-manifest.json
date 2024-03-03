@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Shopping-list/static/css/main.950ccaab.css",
+    "main.js": "/Shopping-list/static/js/main.f420f910.js",
+    "index.html": "/Shopping-list/index.html",
+    "main.950ccaab.css.map": "/Shopping-list/static/css/main.950ccaab.css.map",
+    "main.f420f910.js.map": "/Shopping-list/static/js/main.f420f910.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.950ccaab.css",
+    "static/js/main.f420f910.js"
+  ]
+}
